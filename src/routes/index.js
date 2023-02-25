@@ -1,9 +1,9 @@
-const { authRoutes } = require('../modules/auth');
-const { errorController } = require('../modules/handle-error');
-const { messengerRoutes } = require('../modules/messenger');
-const { notificationRoutes } = require('../modules/notification');
-const { postRoutes } = require('../modules/post');
-const { userRoutes } = require('../modules/user');
+const { authRoutes } = require('../controllers/auth');
+const { errorController } = require('../controllers/handle-error');
+const { messengerRoutes } = require('../controllers/messenger');
+const { notificationRoutes } = require('../controllers/notification');
+const { postRoutes } = require('../controllers/post');
+const { userRoutes } = require('../controllers/user');
 
 const initRoutes = (app) => {
   app.use(authRoutes);
